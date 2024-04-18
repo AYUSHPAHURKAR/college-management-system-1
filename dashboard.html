@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            color: #333;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/058/793/small_2x/abstract-blur-with-bokeh-light-for-background-usage-vector.jpg");
+           
+        }
+        p{
+            color:white;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #0056b3;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+
+        section {
+            padding: 2em;
+            margin: 2em 0;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 6 2px 5px rgba(0, 0, 0, 0.1);
+            width:70%;
+        }
+
+        h2 {
+            color: white;
+        }
+        li{
+            color:#f8f9fa;
+            font-weight: bolder;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #007bff;
+            color: #fff;
+        }
+        #about{
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220217/pngtree-blackboard-background-design-of-college-entrance-examination-book-stack-image_949244.jpg");
+        }
+        #contact{
+            background-image: url("https://www.shutterstock.com/image-illustration/contact-us-icon-phone-email-260nw-1151872529.jpg");
+        }
+        #courses{
+            background-image: url("https://assets-global.website-files.com/62f6eacdea32fe248a88fe4f/65c2a90c5b67c6ac1d6e7026_Frame%206.png");
+        }
+        #admission{
+            background-image: url("https://c4.wallpaperflare.com/wallpaper/231/113/301/background-solid-glare-light-wallpaper-preview.jpg");
+        }
+        
+        .admission-button{
+  background-color:green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin :20px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 30px;
+
+}
+.admission-button:hover{
+    background-color:white;
+    color: green;
+    font-size: 15px;
+}
+nav a:hover{
+    background-color:white;
+    font-size: 17px;
+    border-radius: 10px;
+    color:blue;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Management System</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div >
+
+       
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our college offers a wide range of technical courses in the field of Information 
+            Technology (IT). These courses provide students with practical knowledge and skills
+             needed to excel in the rapidly evolving IT industry. From programming languages 
+             to network administration, our curriculum covers various aspects of IT, ensuring
+              students are well-equipped for future career opportunities. Join us and unlock 
+              your potential in the world of technology..</p>
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <ul>
+            <li>CORE JAVA  </li>
+            <li>JAVASCRIPT</li>
+            <li>CPP</li>
+            <li>REACTJS</li>
+            <li>DATABASES</li>
+           
+        </ul>
+    </section>
+
+    <section id="admission">
+        <h2>Admission Information</h2>
+        <button class="admission-button" onclick="window.location.href = 'addStudent.html'">Student section</button>
+
+        <button class="admission-button" onclick="window.location.href = 'addTeacher.html'">Teacher section</button>
+
+        <button class="admission-button" onclick="window.location.href = 'addnonTeachingStaff.html'">Non teaching staff section</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>You can reach us via the following methods:</p>
+        <ul>
+            <li>Email: smartcollege@gmail.com</li>
+            <li>Phone: 123-456-7890</li>
+            <li>Address: smart college of technology,itarsi-461111(mp)</li>
+        </ul>
+    </section>
+</div>
+
+
+    <footer>
+        <p>&copy; 2024 Smart college of technology</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
+
